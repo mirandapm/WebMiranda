@@ -1,10 +1,8 @@
-html {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
 body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     margin: 0;
     background-color: #efefef;
 }
@@ -22,11 +20,21 @@ header h1 {
 
 .container {
     width: 400px;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
-section article h2, section article p {
-    margin: 1rem 0;
+section article h2 {
+    margin: 1rem 0; /* Ajuste aquí para agregar margen top y bottom */
+}
+
+/* Ajuste de margen o padding para los elementos <h2> que contienen ciertos textos */
+section article h2 {
+    margin-left: 20px; /* Margen hacia la derecha */
+}
+
+/* Ajuste de margen o padding para los elementos <p> que siguen a los elementos <h2> con ciertos textos */
+section article h2 + p {
+    margin-left: 20px; /* Margen hacia la derecha */
 }
 
 footer {
@@ -61,7 +69,15 @@ section article {
     padding: 0.5rem 0;
     cursor: pointer; 
 }
-s
+
 section article:hover {
     box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3)
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 1rem;
 }
